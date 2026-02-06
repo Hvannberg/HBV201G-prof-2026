@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<!--
+Notendaviðmót fyrir heildarverð Appið
+-->
+<GridPane xmlns="http://javafx.com/javafx/25"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="is.vidmot.HeildarverdController"
+          alignment="CENTER"
+          hgap="5" vgap="5">
+
+   <padding>
+      <Insets top="5" right="5" bottom="5" left="5"/>
+   </padding>
+
+   <columnConstraints>
+      <ColumnConstraints/>
+      <ColumnConstraints/>
+   </columnConstraints>
+<!--
+Hér fyrir neðan er lausnin
+-->
+   <children>
+      <Label text="Einingaverð">
+         <GridPane.margin><Insets left="5"/></GridPane.margin>
+      </Label>
+
+      <TextField fx:id="fxFjoldi" GridPane.columnIndex="1"/>
+
+      <Label text="Fjöldi" GridPane.rowIndex="1">
+         <GridPane.margin><Insets left="5"/></GridPane.margin>
+      </Label>
+
+      <TextField fx:id="fxEiningaverd" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+      <Button text="Heildarverð :"
+              onAction="#onHeildarverd"
+              mnemonicParsing="false"
+              GridPane.rowIndex="2">
+         <GridPane.margin><Insets left="5"/></GridPane.margin>
+      </Button>
+
+      <TextField fx:id="fxHeildarverd"
+                 editable="false"
+                 GridPane.columnIndex="1"
+                 GridPane.rowIndex="2"/>
+   </children>
+</GridPane>
