@@ -1,0 +1,18 @@
+Dæmi 12 (liður 1 í síðustu spurningunni) 
+
+
+Liður 1 
+ 
+
+Útskýrðu í stuttu máli hvað aðferðin lesa_vorunumer()  gerir og 
+nefndu eitt atriði sem mætti bæta í skipulagi hennar, án þess að breyta virkninni. 
+
+Svar 
+
+Aðferðin nær í prófnúmer frá notanda. Næst er athugað hvort prófnúmer er með fjórum tölustöfum. Ef ekki þá eru birt skilaboð og aðferð lýkur. 
+Ef prófnúmer er löglegt  er nafni nemanda með því prófnúmeri flett upp í safni. Ef nemandi finnst ekki þá eru birt viðeigandi skilaboð, en annars ef nemandi 
+finnst er nafnið og prófnúmerið birt. 
+
+Umbót (ein umbót nóg):
+1. Færa skilyrði í if-setningum í sérstakar aðferðir sem skila boolean. [útskýring] aðferðir með afmarkað hlutverk
+2. Búa til eina eða tvær aðferðir sem birta villuskilaboð og/eða niðurstöður. [útskýring] Endurtekinn kóði er settur í sér aðferð(ir)
