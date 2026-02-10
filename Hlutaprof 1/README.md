@@ -1,5 +1,5 @@
 
-#HBV201G-prof-2026
+# HBV201G-prof-2026
 Prófverkefni og lausnir fyrir próf í HBV201G, 2026 
 
 ## Hlutapróf 1 
