@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import is.vidmot.VidburdurSpjald?>
+<!--
+Notendaviðmót fyrir lista af viðburðum og einn viðburð
+-->
+
+<VBox alignment="CENTER" prefHeight="250.0" prefWidth="486.0" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is.vidmot.VidburdirController"> <!-- Stýriklasinn fyrir notendaviðmótið -->
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+      <children>
+         <ListView fx:id="fxVidburdir" prefHeight="200.0" prefWidth="200.0" />
+        <VidburdurSpjald fx:id="fxVidburdurSpjald" />
+      </children>
+   </HBox>
+</VBox>
